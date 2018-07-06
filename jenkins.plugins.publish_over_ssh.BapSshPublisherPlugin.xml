@@ -2,7 +2,7 @@
 <jenkins.plugins.publish__over__ssh.BapSshPublisherPlugin_-Descriptor plugin="publish-over-ssh@1.19.1">
   <hostConfigurations/>
   <commonConfig>
-    <secretPassphrase>{AQAAABAAAAAQj9b2oQf+610vjKZCQSLEL9JAOLZtsekJmwd0gjqVHIU=}</secretPassphrase>
+    <secretPassphrase>{AQAAABAAAAAQk60rFGDjzNpZvuKLH0NfvGR4CpIzhF/P9HlE2odLc2U=}</secretPassphrase>
     <key></key>
     <keyPath></keyPath>
     <disableAllExec>false</disableAllExec>
