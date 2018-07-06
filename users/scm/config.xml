@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<user>
+  <fullName>scm</fullName>
+  <description></description>
+  <properties>
+    <jenkins.security.ApiTokenProperty>
+      <apiToken>{AQAAABAAAAAwPt1I2oK9stiUw/JuXsOv/AmY2LwdwU1zOoeNzbqqJJZFI1eiyc5Bp3FEwe9BTRrS/LcjzQUuKO72IeuRAz7aeQ==}</apiToken>
+    </jenkins.security.ApiTokenProperty>
+    <hudson.model.MyViewsProperty>
+      <primaryViewName></primaryViewName>
+      <views>
+        <hudson.model.AllView>
+          <owner class="hudson.model.MyViewsProperty" reference="../../.."/>
+          <name>all</name>
+          <filterExecutors>false</filterExecutors>
+          <filterQueue>false</filterQueue>
+          <properties class="hudson.model.View$PropertyList"/>
+        </hudson.model.AllView>
+      </views>
+    </hudson.model.MyViewsProperty>
+    <hudson.model.PaneStatusProperties>
+      <collapsed/>
+    </hudson.model.PaneStatusProperties>
+    <hudson.security.HudsonPrivateSecurityRealm_-Details>
+      <passwordHash>#jbcrypt:$2a$10$2IzfCcVE13AK.3aeo.9PJeNVshmLev//suO0GoBDmXjc6W6WJ1S1K</passwordHash>
+    </hudson.security.HudsonPrivateSecurityRealm_-Details>
+    <org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
+      <authorizedKeys>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDCHQZtGK8mpa7sxYB18PTdIN6URvQbKUM4ECbkU7vq261JUmrPV0umMsWNk3yjYvIZ9JwFy8hR4d8ZCiBFqwRAAtAa7Lej5OJnjnjN5rHcyAjGl7+lCvylez1aYpWjNCyLBFRwoLKLMVfENcdO+b89ZqqR3nDXupNNHgvwQnFvZSwLzzQl/Ucy7CQBF52EXlHfxnKqKFZqazhBXgJylgP7Df5aYOupODZ/CWVOiH0eLpVDIgUABLIn4TpCBXhZ0dJ6xpBrco4poUkAwT3OLMBwxLZf/OU8yxEKEijJvvdLZaDum89MmjJhLLDxCIUItbqjf/deuzzX2dDg0CWN5Tht xugangfeng@10.142.132.78</authorizedKeys>
+    </org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
+    <hudson.search.UserSearchProperty>
+      <insensitiveSearch>true</insensitiveSearch>
+    </hudson.search.UserSearchProperty>
+    <jenkins.security.LastGrantedAuthoritiesProperty>
+      <roles>
+        <string>authenticated</string>
+      </roles>
+      <timestamp>1511781099128</timestamp>
+    </jenkins.security.LastGrantedAuthoritiesProperty>
+  </properties>
+</user>

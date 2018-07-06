@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>执行脚本参数说明&#xd;
+    [分支名]                [型号]    [版本序号]&#xd;
+YJ263_S00D_V110 BBT019 0.0.12&#xd;
+&#xd;
+&#xd;
+分支	型号	                          版本&#xd;
+YJ263_S00D_V110          BBT019    碧桂园&#xd;
+YJ263_S00C_V110          BBT009	  F1&#xd;
+YJ263_S00B_V110	         BBT008	  Q2&#xd;
+YJ263_S00A_V110          BBT007    YJ263&#xd;
+&#xd;
+</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.27">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>branch</name>
+          <description>下载分支名</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>YJ263_S00D_V110</string>
+              <string>YJ263_S00C_V110</string>
+              <string>YJ263_S00B_V110</string>
+              <string>YJ263_S00A_V110</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>mode</name>
+          <description>编译型号</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>BBT019</string>
+              <string>BBT009</string>
+              <string>BBT008</string>
+              <string>BBT007</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>versionno</name>
+          <description>编译版本号</description>
+          <defaultValue>0.0.10</defaultValue>
+          <trim>true</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>build_with_test</name>
+          <description>是否编译测试版本</description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.5.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>git@192.168.1.14:scm_shell.git</url>
+        <credentialsId>e85ab257-3a8a-4a6a-a2ec-6e3d57777b8e</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <assignedNode>master</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>./yj263_build.sh $branch $mode $versionno $build_with_test</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.tasks.Mailer plugin="mailer@1.20">
+      <recipients>gangfengxu@agpc.cn yuhuachen@agpc.cn zhonggong@agpc.cn chengbowang@agpc.cn pingyang@agpc.cn chenhu@babateng.cn</recipients>
+      <dontNotifyEveryUnstableBuild>true</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>false</sendToIndividuals>
+    </hudson.tasks.Mailer>
+  </publishers>
+  <buildWrappers/>
+</project>
