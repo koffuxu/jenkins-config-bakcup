@@ -98,9 +98,11 @@
           <default>
             <comparator class="hudson.util.CaseInsensitiveComparator"/>
           </default>
-          <int>2</int>
+          <int>3</int>
           <string></string>
           <string></string>
+          <string>LANG</string>
+          <string>zh_CN.UTF-8</string>
           <string>MAVEN_WAR_OUT</string>
           <string>/tmp/warfiles</string>
         </tree-map>
