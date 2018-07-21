@@ -92,7 +92,7 @@ release = 外网正式版本;</description>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>/bin/bash -leix ./bbtbuild.sh $type 1 $upload 0 $versionno jenkins</command>
+      <command>/bin/bash -leix ./bbtbuild.sh $type 1 $upload 1 $versionno jenkins</command>
       <unstableReturn>1</unstableReturn>
     </hudson.tasks.Shell>
   </builders>
