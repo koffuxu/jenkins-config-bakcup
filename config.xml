@@ -98,11 +98,9 @@
           <default>
             <comparator class="hudson.util.CaseInsensitiveComparator"/>
           </default>
-          <int>4</int>
+          <int>3</int>
           <string></string>
           <string></string>
-          <string>JAVA_TOOL_OPTIONS</string>
-          <string>-Dfile.encoding=UTF-8</string>
           <string>LANG</string>
           <string>zh_CN.UTF-8</string>
           <string>MAVEN_WAR_OUT</string>
