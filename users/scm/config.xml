@@ -19,9 +19,7 @@
       </views>
     </hudson.model.MyViewsProperty>
     <hudson.model.PaneStatusProperties>
-      <collapsed>
-        <string>executors</string>
-      </collapsed>
+      <collapsed/>
     </hudson.model.PaneStatusProperties>
     <hudson.security.HudsonPrivateSecurityRealm_-Details>
       <passwordHash>#jbcrypt:$2a$10$2IzfCcVE13AK.3aeo.9PJeNVshmLev//suO0GoBDmXjc6W6WJ1S1K</passwordHash>
